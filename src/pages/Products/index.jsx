@@ -1,9 +1,6 @@
 import React from "react"
 import ProductsDisplay from "../../components/ProductsDisplay"
 
-import React from 'react';
-import ProductsDisplay from "../../components/ProductsDisplay";
-
 const Products = ({products}) => {
   return (
     <div>

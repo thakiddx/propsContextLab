@@ -1,17 +1,20 @@
+import React from "react"
 
-const Cart = () => {
+const Cart = ({ products }) => {
+
+  const cartProducts = products.filter((product) => product.inCart);
   return (
     <div>
-        {/* we need products array here */}
-        {/* {products.filter((product) => {
-            if (product.inCart) {
-                return true
-            } else {
-                return false
-            }
-        })} */}
+      <h1>Cart</h1>
+      <ul>
+        {cartProducts.map((product) => (
+          <li key={product.id}>
+            {product.name} - ${product.price}
+          </li>
+        ))}
+      </ul>
     </div>
-  )
+  );
 }
 
-export default Cart
+export default Cart;
