@@ -1,12 +1,16 @@
+import React from "react"
 import ProductsDisplay from "../../components/ProductsDisplay"
 
-const Products = () => {
+import React from 'react';
+import ProductsDisplay from "../../components/ProductsDisplay";
+
+const Products = ({products}) => {
   return (
     <div>
         <h1>This is the Products Page!</h1>
-        <ProductsDisplay />
+        <ProductsDisplay products={products}/>
     </div>
-  )
-}
+  );
+};
 
 export default Products
